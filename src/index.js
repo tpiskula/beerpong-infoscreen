@@ -54,7 +54,7 @@ const App = () => (
       <div className="clock" style={clockStyle}>
         <Clock format={'HH:mm:ss'} ticking={true} />
       </div>
-      <div className="heading" style={headingStyle}>Bierpong Volume 13</div>
+      <div className="heading" style={headingStyle}>Bierpong Vol 13</div>
     </div>
       <div>
     <iframe
