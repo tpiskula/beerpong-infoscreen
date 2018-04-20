@@ -2,6 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import Clock from 'react-live-clock';
 import JG from "./JG";
+import './index.css';
 
 const styles = {
   fontFamily: "sans-serif",
@@ -50,10 +51,10 @@ const App = () => (
   <div style={styles}>
     <div style={bannerStyle}>
       <JG />
-      <div style={clockStyle}>
+      <div className="clock" style={clockStyle}>
         <Clock format={'HH:mm:ss'} ticking={true} />
       </div>
-      <div style={headingStyle}>Bierpong Volume 13</div>
+      <div className="heading" style={headingStyle}>Bierpong Volume 13</div>
     </div>
       <div>
     <iframe
