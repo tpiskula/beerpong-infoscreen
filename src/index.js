@@ -61,7 +61,7 @@ const App = () => (
     <div>
       <iframe
         style={frameStyles}
-        src="/bracket"
+        src="https://jgw.challonge.com/bp14/module"
         width="100%"
         height="500"
         frameborder="0"
