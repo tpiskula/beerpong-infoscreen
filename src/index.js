@@ -1,8 +1,8 @@
 import React from "react";
 import { render } from "react-dom";
-import Clock from 'react-live-clock';
+import Clock from "react-live-clock";
 import JG from "./JG";
-import './index.css';
+import "./index.css";
 
 const styles = {
   fontFamily: "sans-serif",
@@ -11,24 +11,24 @@ const styles = {
   height: "97vh"
 };
 
-const bannerStyle= {
-  position: 'absolute',
+const bannerStyle = {
+  position: "absolute",
   bottom: 0,
   backgroundColor: "#272a34",
-  height: '110px',
-  width: '100%',
-  zIndex: 1,
-}
+  height: "110px",
+  width: "100%",
+  zIndex: 1
+};
 
 const clockStyle = {
   fontFamily: "sans-serif",
-  color: '#fff',
-  lineHeight: '110px',
-  fontSize: '2em',
-  fontWeight: 'bold',
-  width:'100%',
+  color: "#fff",
+  lineHeight: "110px",
+  fontSize: "2em",
+  fontWeight: "bold",
+  width: "100%",
   textAlign: "center",
-  position: "absolute",
+  position: "absolute"
 };
 
 const frameStyles = {
@@ -39,12 +39,12 @@ const frameStyles = {
 };
 
 const headingStyle = {
-  lineHeight: '110px',
-  color: 'rgb(54, 213, 19)',
-  fontSize:'2em',
-  fontWeight:'bold',
-  textAlign: 'right',
-  paddingRight: '1em'
+  lineHeight: "110px",
+  color: "rgb(54, 213, 19)",
+  fontSize: "2em",
+  fontWeight: "bold",
+  textAlign: "right",
+  paddingRight: "1em"
 };
 
 const App = () => (
@@ -52,22 +52,26 @@ const App = () => (
     <div style={bannerStyle}>
       <JG />
       <div className="clock" style={clockStyle}>
-        <Clock format={'HH:mm:ss'} ticking={true} />
+        <Clock format={"HH:mm:ss"} ticking={true} />
       </div>
-      <div className="heading" style={headingStyle}>Bierpong Vol 13</div>
+      <div className="heading" style={headingStyle}>
+        Bierpong Vol 14
+      </div>
     </div>
-      <div>
-    <iframe
-      style={frameStyles}
-      src="https://jgw.challonge.com/BP13/module"
-      width="100%"
-      height="500"
-      frameborder="0"
-      scrolling="auto"
-      allowtransparency="true"
-    />
+    <div>
+      <iframe
+        style={frameStyles}
+        src="https://jgw.challonge.com/bp14/module"
+        width="100%"
+        height="500"
+        frameborder="0"
+        scrolling="auto"
+        allowtransparency="true"
+      />
     </div>
   </div>
 );
 
-render(<App />, document.getElementById("root"));
+var elem = document.createElement("div");
+document.body.appendChild(elem);
+render(<App />, elem);

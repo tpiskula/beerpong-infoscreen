@@ -1,10 +1,19 @@
 @media only screen and (max-width: 600px) {
-    .heading {
-      display: none;
-    }
+
+  .heading {
+
+    display: none;
+
+  }
+
 }
+
 @media only screen and (max-width: 800px) {
-    .clock{
-      display: none;
-    }
+
+  .clock {
+
+    display: none;
+
+  }
+
 }
