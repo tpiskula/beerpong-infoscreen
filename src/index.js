@@ -55,13 +55,13 @@ const App = () => (
         <Clock format={"HH:mm:ss"} ticking={true} />
       </div>
       <div className="heading" style={headingStyle}>
-        Bierpong Vol 18
+        Bierpong Vol 19
       </div>
     </div>
     <div>
       <iframe
         style={frameStyles}
-        src="https://challonge.com/bp18/module"
+        src="https://challonge.com/bp19/module"
         width="100%"
         height="500"
         frameborder="0"
